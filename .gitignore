@@ -1,4 +1,2 @@
-#ignore
 private/config/db.php
-.idea\*
-.idea/workspace.xml
+.idea/*
