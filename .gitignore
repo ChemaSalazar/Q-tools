@@ -1,2 +1,5 @@
 private/config/db.php
 .idea/*
+.idea\*
+private/config/dbcredentials.php
+.idea/workspace.xml
