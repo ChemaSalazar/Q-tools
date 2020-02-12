@@ -6,11 +6,16 @@
  * Time: 5:59 PM
  */
 
+include('../config/db.php');
+
 class QTools
 {
-    public static function start_database(){
+    public static function start_database($dsn, $user, $pass, $options){
         try{
             $db_connect = new PDO($dsn,$user,$pass,$options);
+        }
+        catch (\PDOException $e){
+            throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
     }
 
